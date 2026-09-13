@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://localhost:8000/api";
+const API_BASE_URL = "https://ai-upcycling-designer.onrender.com";
 
 /**
  * Call FastAPI backend to analyze garment and generate 3-4 upcycling ideas
