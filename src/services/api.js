@@ -6,7 +6,7 @@ const API_BASE_URL = "https://ai-upcycling-designer.onrender.com";
  */
 export async function analyzeGarmentAPI(garmentData) {
   try {
-    const response = await fetch(`${API_BASE_URL}/analyze`, {
+    const response = await fetch(`${API_BASE_URL}/api/analyze`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -43,7 +43,7 @@ export async function analyzeGarmentAPI(garmentData) {
  */
 export async function selectIdeaAPI(garmentData, analysisData, selectedIdea) {
   try {
-    const response = await fetch(`${API_BASE_URL}/select-idea`, {
+    const response = await fetch(`${API_BASE_URL}/api/select-idea`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
