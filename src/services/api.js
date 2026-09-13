@@ -1,5 +1,4 @@
 const API_BASE_URL = "https://ai-upcycling-designer.onrender.com";
-
 /**
  * Call FastAPI backend to analyze garment and generate 3-4 upcycling ideas
  * @param {Object} garmentData - { garmentType, material, condition, size, imageUrl, userPreference }
@@ -30,7 +29,7 @@ export async function analyzeGarmentAPI(garmentData) {
     const data = await response.json();
     return data;
   } catch (error) {
-    console.warn("Failed to reach FastAPI backend at http://localhost:8000. Ensure backend is running.", error);
+    console.warn("Failed to reach FastAPI backend at https://ai-upcycling-designer.onrender.com. Ensure backend is running.", error);
     return null;
   }
 }
@@ -64,7 +63,7 @@ export async function selectIdeaAPI(garmentData, analysisData, selectedIdea) {
     const data = await response.json();
     return data;
   } catch (error) {
-    console.warn("Failed to reach FastAPI backend at http://localhost:8000. Ensure backend is running.", error);
+    console.warn("Failed to reach FastAPI backend at https://ai-upcycling-designer.onrender.com. Ensure backend is running.", error);
     return null;
   }
 }

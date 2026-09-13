@@ -41,7 +41,7 @@ export default function UploadPage({ garment, setGarment, onAnalyze, onApiSucces
         if (onApiSuccess) onApiSuccess(res);
         onAnalyze();
       } else {
-        setApiError("Unable to analyze garment. Please ensure the backend server is running at http://localhost:8000.");
+        setApiError("Unable to analyze garment. Please ensure the backend server is running at https://ai-upcycling-designer.onrender.com.");
       }
     } catch (e) {
       console.error("API analysis error:", e);
